@@ -41,7 +41,7 @@ public class GUI extends JFrame {
 	private Alarm alarm = new Alarm();
 	
 	public GUI() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setResizable(false);
 		setBounds(100, 100, 325, 500);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(128, 128, 0));
@@ -169,8 +169,6 @@ public class GUI extends JFrame {
 					alarm.setSecond( (Integer) SecondSpinner.getModel().getValue());
 					
 					JOptionPane.showMessageDialog(btnSetAlarm,"Alarm Set Successfully");  
-					
-					System.out.println(alarm);
 					
 				}catch (Exception ex) {
 				    JOptionPane.showMessageDialog(btnSetAlarm,"Error/Exception occurred while setting Alarm","Alert",JOptionPane.WARNING_MESSAGE);     

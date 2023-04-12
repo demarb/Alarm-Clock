@@ -10,5 +10,6 @@
 1. GUI Building (see preview.png)
 2. String and DateTime Manipulation
 4. Threading
-5. OOP
+5. Object Oriented Programming
 6. File Handling
+7. Exception Handling

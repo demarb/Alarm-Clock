@@ -1,9 +1,7 @@
 package clock;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 public class Alarm {
 
@@ -93,8 +91,5 @@ public class Alarm {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
 		this.setCurrentTime(time.format(dtf));
 	}
-	
-	
-	
 	
 }
